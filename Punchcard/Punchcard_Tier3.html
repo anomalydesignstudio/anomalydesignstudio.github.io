@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scuffed Punchcard 2025 Tier 3</title>
+    <style>
+        body 
+		{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+			background-repeat:no-repeat;
+			background-size:100%;
+			background-position:center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 5fr));
+            gap: 10px;
+            width: 1000px;
+            max-width: 80%;
+			justify-content: center;
+			align-items: center;
+        }
+        .grid-container img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+        .grid-container img:hover {
+            border-color: #7441a4;
+        }
+    </style>
+</head>
+<body>
+	<body background= https://i.imgur.com/OPmCsIz.jpeg>
+	
+    <div class="grid-container">
+		<!-- Image 1 -->
+        <img src="https://i.imgur.com/sbo2IIa.jpeg" alt="Image 1" data-alt-src="https://i.imgur.com/2ewSGb5.jpeg">
+		<!-- Image 2 -->
+		<img src="https://i.imgur.com/nNlnSKA.jpeg" alt="Image 1" data-alt-src="https://i.imgur.com/99T0awg.jpeg">
+		<!-- Image 3 -->
+		<img src="https://i.imgur.com/euRdkpc.jpeg" alt="Image 1" data-alt-src="https://i.imgur.com/CqPdwlN.jpeg">
+		<!-- Image 4 -->
+		<img src="https://i.imgur.com/H7AaTSA.jpeg" alt="Image 1" data-alt-src="https://i.imgur.com/TScGgM9.jpeg">
+		<!-- Image 5 -->
+		<img src="https://i.imgur.com/sLFc92F.jpeg" alt="Image 1" data-alt-src="https://i.imgur.com/4FJRvjB.jpeg">
+		<!-- Image 6 -->
+		<img src="https://i.imgur.com/9o4urZZ.jpeg" alt="Image 1" data-alt-src="https://i.imgur.com/g1macSU.jpeg">
+		<!-- Image 7 -->
+		<img src="https://i.imgur.com/qflJpvA.jpeg" alt="Image 1" data-alt-src="https://i.imgur.com/OjqpWGT.jpeg">
+		<!-- Image 8 -->
+		<img src="https://i.imgur.com/CYPgc0l.jpeg" alt="Image 1" data-alt-src="https://i.imgur.com/NFZzrYB.jpeg">
+		<!-- Image 9 -->
+		<img src="https://i.imgur.com/YRGxhLx.jpeg" alt="Image 1" data-alt-src="https://i.imgur.com/VZcCXXO.jpeg">
+		<!-- Image 10 -->
+		<img src="https://i.imgur.com/GHJOdq6.jpeg" alt="Image 1" data-alt-src="https://i.imgur.com/gQVVZxT.jpeg">
+		<!-- Image 11 -->
+		<img src="https://i.imgur.com/uweLuH9.jpeg" alt="Image 1" data-alt-src="https://i.imgur.com/cCk9eiV.jpeg">
+		<!-- Image 12 -->
+		<img src="https://i.imgur.com/srxZUiT.jpeg" alt="Image 1" data-alt-src="https://i.imgur.com/YS6C9Mo.jpeg">
+        <!-- Add more images as needed -->
+    </div>
+
+    <script>
+        // Select all images in the grid
+        const images = document.querySelectorAll('.grid-container img');
+
+        // Add click event listener to each image
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                // Get the alternate source from data attribute
+                const newSrc = image.getAttribute('data-alt-src');
+                const currentSrc = image.getAttribute('src');
+                
+                // Swap the src with the alternate source
+                image.setAttribute('src', newSrc);
+                image.setAttribute('data-alt-src', currentSrc);
+            });
+        });
+    </script>
+</body>
+</html>
