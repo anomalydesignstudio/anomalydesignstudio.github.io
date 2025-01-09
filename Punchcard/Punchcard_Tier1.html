@@ -16,7 +16,7 @@
             height: 100vh;
             background-color: #f4f4f4;
 			background-repeat:no-repeat;
-			background-size:100%;
+			background-size: cover;
 			background-position:center;
         }
         .grid-container {
@@ -43,6 +43,10 @@
             .grid-container {
                 grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); /* Adjust columns for small screens */
                 padding: 5px; /* Reduce padding for smaller screens */
+			}
+			
+		    .grid-container img {
+                max-width: 80%; /* Ensure images don't overflow */
 		}
     </style>
 </head>
