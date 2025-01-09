@@ -41,7 +41,7 @@
 		
 		@media (max-width: 600px) {
             .grid-container {
-                grid-template-columns: repeat(auto-fill, minmax(75px, 1fr)); /* Single column for mobile */
+                grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Single column for mobile */
                 padding: 5px;
             }
         }
@@ -49,16 +49,12 @@
         /* Mobile Landscape - 5 items per row for devices between 600px and 900px */
         @media (min-width: 600px) and (max-width: 900px) {
             .grid-container {
-                grid-template-columns: repeat(5, 1fr); /* Exactly 5 items per row */
+                grid-template-columns: repeat(5, 50px, 1fr); /* Exactly 5 items per row */
                 padding: 10px;
             }
         }
 
-        /* Large screens (for reference) */
-        @media (min-width: 900px) {
-            .grid-container {
-                grid-template-columns: repeat(auto-fill, minmax(75px, 1fr)); /* Adjust columns for larger screens */
-            }
+
     </style>
 </head>
 <body>
