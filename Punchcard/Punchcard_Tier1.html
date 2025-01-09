@@ -38,6 +38,11 @@
         .grid-container img:hover {
             border-color: #7441a4;
         }
+		
+		@media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adjust columns for small screens */
+                padding: 5px; /* Reduce padding for smaller screens */
     </style>
 </head>
 <body>
