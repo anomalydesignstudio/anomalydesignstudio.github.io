@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Stats Summary</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #070707;
+            font-family: Arial, sans-serif;
+        }
+
+        .stats-container {
+            text-align: center;
+			width:20%;
+			background: url('https://i.imgur.com/7QtHScW.png') no-repeat center center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .stats-container h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+			font-style: bold;
+            color: #ffff00;
+			text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, 2px 2px 0 #000000;
+        }
+
+        .stats-container input {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #cccccc;
+            border-radius: 3px;
+            font-size: 1em;
+            outline: none;
+        }
+
+        .stats-container input:focus {
+            border-color: #6666ff;
+            box-shadow: 0 0 5px rgba(102, 102, 255, 0.5);
+        }
+		
+		.stats-container .checkbox-group {
+            margin-top: 20px;
+            text-align: center;
+        }
+		
+		.stats-container .checkbox-group h2 {
+            font-size: 1.5em;
+			font-style: bold;
+			color: yellow;
+			text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+        }
+
+        .stats-container .checkbox-group label {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: .6em;
+            color: yellow;
+            text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+        }
+
+        .stats-container .checkbox-group input[type="checkbox"] {
+            margin-right: 5px;
+            border: 1px solid #000000;
+            border-radius: 1px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="stats-container">
+        <h1>Punchcard Stats Sheet</h1>
+        <input type="text" placeholder="Username">
+        <input type="text" placeholder="Location/Time Zone">
+        <input type="text" placeholder="Total Level">
+        <input type="text" placeholder="Availability (Est Hours/Day)">
+        <input type="text" placeholder="Combat Tasks Tier Unlocked">
+        <input type="text" placeholder="Total Boss Kill Count">
+        <input type="text" placeholder="Total Raid Completions">
+        <input type="text" placeholder="Top Boss (+ Amount)">
+        <input type="text" placeholder="Top Skilling Boss (+ Amount)">
+        <input type="text" placeholder="Top Raid (+ Amount)">
+		<input type="text" placeholder="Name of Partner First Pick (Not 
+Guaranteed)">
+		
+		<div class="checkbox-group">
+			<h2>What do you consider yourself<h2>
+            <label><input type="checkbox" name="game-phase" value="early-game"> Early Game</label>
+            <label><input type="checkbox" name="game-phase" value="mid-game"> Mid Game</label>
+            <label><input type="checkbox" name="game-phase" value="late-game"> Late Game</label>
+            <label><input type="checkbox" name="game-phase" value="end-game"> End Game PVM</label>
+		
+		<div class="checkbox-group">
+			<h3>Archetype<h3>
+            <label><input type="checkbox" name="game-phase" value="early-game"> Teacher</label>
+            <label><input type="checkbox" name="game-phase" value="mid-game"> Grinder</label>
+            <label><input type="checkbox" name="game-phase" value="late-game"> Planner</label>
+    </div>
+</body>
+</html>
